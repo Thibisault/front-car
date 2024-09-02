@@ -1,0 +1,29 @@
+<div class="chat-container">
+    <div class="contacts-sidebar">
+      <h3>Contacts</h3>
+      <ul>
+        <li *ngFor="let contact of contacts" (click)="switchConversation(contact)">
+          {{ contact.name }}
+        </li>
+      </ul>
+    </div>
+    
+    <div class="chat-content">
+      <h2>{{ receiverName }}</h2>
+      <div class="header-container">
+        <div class="current-user">Connecté : {{ senderName }}</div>
+        <button class="logout-button" (click)="logout()">Déconnexion</button>
+      </div>
+      <ul>
+        <li *ngFor="let message of messages" [ngClass]="{'sent': message.senderId === sender.id, 'received': message.senderId !== sender.id}">
+          <strong>{{ message.senderId === sender.id ? senderName : receiverName }}:</strong> {{ message.messageContent }}
+        </li>
+      </ul>
+  
+      <div class="chat-input-container">
+        <input type="text" #messageContent>
+        <button class="send-button" (click)="sendMessage(messageContent.value); messageContent.value = ''">Envoyer</button>
+      </div>
+    </div>
+  </div>
+  

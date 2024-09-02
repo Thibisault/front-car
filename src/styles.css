@@ -1,0 +1,115 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #0b0b16;
+    color: #e0e0e0;
+  }
+  
+  a {
+    color: #e0e0e0;
+    text-decoration: none;
+    transition: color 0.3s ease;
+  }
+  
+  a:hover {
+    color: #d1d2e0;
+  }
+  
+  .container {
+    max-width: 75rem;
+    margin: 0 auto;
+    padding: 1.25rem;
+    background-color: #1c1c2e;
+    border-radius: 0.5rem;
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+  }
+  
+  .container:hover {
+    transform: scale(1.02);
+    box-shadow: 0 0.7rem 1.4rem rgba(0, 0, 0, 0.3);
+  }
+  
+  button {
+    padding: 0.625rem 1.25rem;
+    border: none;
+    border-radius: 0.5rem;
+    background-color: #3d3e70;
+    color: #e0e0e0;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+  }
+  
+  button:hover {
+    background-color: #5a5c8f;
+    transform: scale(1.05);
+  }
+  
+  form {
+    max-width: 400px;
+    margin: 2rem auto;
+    padding: 1.25rem;
+    background-color: #1a1b41;
+    border-radius: 0.5rem;
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  input[type='text'],
+  input[type='email'],
+  input[type='password'] {
+    width: calc(100% - 2.5rem);
+    padding: 0.625rem;
+    margin-bottom: 1.25rem;
+    border-radius: 0.5rem;
+    border: none;
+    outline: none;
+    background-color: #282a47;
+    color: #e0e0e0;
+    transition: background-color 0.3s ease;
+  }
+  
+  input[type='text']:focus,
+  input[type='email']:focus,
+  input[type='password']:focus {
+    background-color: #3c3c5e;
+  }
+  
+  label {
+    display: block;
+    margin-bottom: 0.625rem;
+    color: #a8a9c0;
+  }
+  
+  h2, h3 {
+    text-align: center;
+    color: #d1d2e0;
+  }
+  
+  .link-container {
+    margin-top: auto;
+    text-align: center;
+    margin-top: 1rem;
+  }
+  
+  .link-container p {
+    color: #e0e0e0;
+  }
+  
+  .link-container a {
+    color: #3d3e70;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+  }
+  
+  .link-container a:hover {
+    color: #5a5c8f;
+  }
+  
